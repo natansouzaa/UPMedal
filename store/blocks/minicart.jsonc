@@ -1,0 +1,97 @@
+{
+    "minicart.v2": {
+        "props": {
+            "MinicartIcon": "icon-cart#carrinho"
+        },
+        "children": [
+            "minicart-base-content"
+        ]
+    },
+    
+    "icon-cart#carrinho": {
+        "props": {
+            "size": 25
+        }
+    },
+
+    "minicart-base-content": {
+        "blocks": [
+            "minicart-empty-state"
+        ],
+        "children": [
+            "minicart-product-list"       ]
+    },
+
+    "minicart-product-list": {
+        "blocks": [
+            "product-list#minicart"
+        ]
+    },
+
+    "product-list#minicart": {
+        "blocks": [
+            "product-list-content-mobile"
+        ]
+    },
+
+    "minicart-summary": {
+        "blocks": [ 
+            "checkout-summary.compact#minicart"
+        ]
+    },
+
+    "checkout-summary.compact#minicart": {
+        "children": [
+            "summary-totalizers#minicart"
+        ],
+        "props": {
+            "totalizersToShow": [
+                "Items", "Discounts"
+            ]
+        }
+    },
+
+    "summary-totalizers#minicart": {
+        "props": {
+            "showTotal": true,
+            "showDeliveryTotal": false
+        }
+    },
+
+    "minicart-empty-state": {
+        "children": [
+            "flex-layout.row#empty-state"
+        ]
+    },
+
+    "flex-layout.row#empty-state": {
+        "children": [
+            "flex-layout.col#empty-state"
+        ]
+    },
+
+    "flex-layout.col#empty-state": {
+        "children": [
+            "icon-cart#minicart-empty-state",
+            "rich-text#minicart-default-empty-state"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "rowGap": 5
+        }
+    },
+
+    "icon-cart#minicart-empty-state": {
+        "props": {
+            "size": 64,
+            "blockClass": "minicart-empty-state"
+        }
+    },
+
+    "rich-text#minicart-default-empty-state": {
+        "props": {
+            "text": "Seu carrinho está vazio"
+        }
+    }
+}

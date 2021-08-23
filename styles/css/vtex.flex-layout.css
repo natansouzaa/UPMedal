@@ -1,0 +1,47 @@
+.flexRowContent--main-header-mobile {
+	background-color: #212121;
+	align-items: center;
+}
+
+.flexRow--sticky-header-categorias
+	:global(.vtex-store-components-3-x-container) {
+	margin: 0;
+	padding: 0;
+}
+
+.flexRow--containerPrincipal {
+	background-color: #303030;
+	padding-bottom: 60px !important;
+	min-height: 100vh;
+}
+
+.flexRowContent--FooterPrincipal {
+	background-color: #212121;
+	display: flex;
+}
+
+.flexCol--ContainerInferiorCenter {
+	align-items: center;
+}
+
+.flexCol--ContainerInferiorEsquerda {
+	align-items: flex-end;
+}
+
+.flexCol--ContainerInferiorDireita {
+	background-color: #59ff00;
+	align-items: flex-start;
+	border-radius: 5px;
+	width: 45px !important;
+	height: 45px !important;
+}
+
+.flexRowContent--FooterPrincipal
+	:global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+	justify-content: left;
+}
+
+.flexRow--ContainerFormulario {
+	background-color: #303030;
+	min-height: 90vh;
+}

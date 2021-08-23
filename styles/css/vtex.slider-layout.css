@@ -1,0 +1,54 @@
+.slideChildrenContainer,
+.slideChildrenContainer--carosel {
+	background-color: #1d1a1a;
+	height: 150%;
+}
+
+.paginationDot--isActive {
+	margin-top: -5%;
+}
+
+.sliderRightArrow {
+	margin-top: -10%;
+}
+
+.paginationDot--shelf {
+	margin-top: -5%;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+	color: #59ff00;
+}
+
+.logoLink {
+	justify-content: center;
+}
+
+.paginationDot--isActive--shelf {
+	background-color: #554d4d;
+	margin-top: -5%;
+}
+
+.paginationDot {
+	margin-top: -3%;
+}
+
+.slideChildrenContainer {
+	background-color: 212020;
+	margin: none;
+	padding: none;
+}
+
+.caretIcon {
+	color: #554d4d;
+}
+
+.sliderArrows,
+.sliderArrows--shelf {
+	padding: 0 -70% 0 -70%;
+	margin-top: -5%;
+}
+
+.slide {
+	margin-bottom: 2%;
+}

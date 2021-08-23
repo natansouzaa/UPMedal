@@ -1,0 +1,40 @@
+{
+    "slider-layout#first": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "autoplay": {
+                "timeout": 1200,
+                "stopOnHover": true
+            },
+            "showNavigationArrows": "desktopOnly",
+            "blockClass": "carousel"
+        },
+        "children": [
+            "image#bannerWood",
+            "image#bannerGuerreiro"
+        ]
+    },    
+
+    "image#bannerWood": {
+        "props": {
+            "src": "assets/banner-wood-sport.png",
+            "title": "Festival Wood Sport",
+            "alt": "Kit Wood Sport",
+            "maxHeight": 250
+        }
+    },
+
+    "image#bannerGuerreiro": {
+        "props": {
+            "src": "assets/banner-grandes-guerreiros.png",
+            "title": "Kit Grandes Guerreiros",
+            "alt": "Kit Grandes Guerreiros",
+            "maxHeight": 250
+        }
+    }
+}

@@ -1,21 +1,41 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop", 
+      "header-layout.mobile"],
+    "props": {
+      "blockClass": "classheader"
+    }
   },
+
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop", 
+      "header-layout.mobile"]
   },
+
   "header-layout.desktop": {
     "children": [
-      "sticky-layout#desktop"
+      "sticky-layout#desktop",
+      "vtex.menu@2.x:menu#websites"
     ]
   },
+
+  "header-row#1-desktop": {
+    "children": [
+      "minicart.v2"
+    ]
+  },
+
   "sticky-layout#desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": [
+      "flex-layout.row#desktop"
+    ]
   },
+
   "flex-layout.row#desktop": {
     "props": {
       "horizontalAlign": "center",
@@ -26,43 +46,45 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
-      "login",
       "minicart.v2"
     ]
   },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
+
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": [
+      "logo"
+    ]
   },
+
   "logo": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "assets/logo.png",
+      "width": "125"
     }
   },
+
   "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
+    "children": [
+      "sticky-layout#mobile"
+    ]
   },
+
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+    "children": [
+      "flex-layout.row#mobile"
+    ]
   },
+
   "flex-layout.row#mobile": {
     "children": [
       "drawer",
       "logo",
-      "flex-layout.col#spacer",
       "login",
       "minicart.v2"
     ],
@@ -73,7 +95,134 @@
       "fullWidth": true
     }
   },
+
   "drawer": {
     "children": []
+  },
+
+  "flex-layout.row#list-row.mobile": {
+    "children": [
+      "minicart.v2"
+    ]
+  },
+
+  "flex-layout.row#minicart-footer": {
+    "children": [
+      "minicart.v2"
+    ]
+  },
+
+  "vtex.menu@2.x:menu#websites": {
+    "props": {
+      "items": [{
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#programacao",
+            "noFollow": false,
+            "text": "PROMOÇÃO"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#corinthians",
+            "noFollow": false,
+            "text": "CORINTHIANS"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#palmeiras",
+            "noFollow": false,
+            "text": "PALMEIRAS"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#signos",
+            "noFollow": false,
+            "text": "SIGNOS"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#7maravilhas",
+            "noFollow": false,
+            "text": "7 MARAVILHAS"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#guerreiros",
+            "noFollow": false,
+            "text": "GUERREIROS"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#album1",
+            "noFollow": false,
+            "text": "ÁLBUM 1"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#album2",
+            "noFollow": false,
+            "text": "ÁLBUM 2"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#album3",
+            "noFollow": false,
+            "text": "ÁLBUM 3"
+          }
+        }
+      ]
+    }
   }
 }

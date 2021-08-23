@@ -1,0 +1,15 @@
+.menuContainer {
+	background-color: #2c2727;
+}
+
+.styledLinkContent {
+	color: white;
+}
+
+.styledLinkContent:hover {
+	color: #59ff00;
+}
+
+.menuContainer {
+	justify-content: center;
+}
